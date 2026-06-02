@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz — Systemy motywacji</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Systemy motywacji</h1>
+      <p class="subtitle">Quiz do nauki — pytania i odpowiedzi w losowej kolejności</p>
+    </header>
+
+    <section id="screen-start" class="screen active start-screen">
+      <div class="card">
+        <p>
+          Quiz zawiera <strong id="question-count">24</strong> pytań jednokrotnego wyboru
+          na podstawie materiału o systemach motywacji. Przy każdym uruchomieniu
+          pytania i kolejność odpowiedzi są losowane.
+        </p>
+        <button type="button" class="btn" id="btn-start">Rozpocznij quiz</button>
+      </div>
+    </section>
+
+    <section id="screen-quiz" class="screen">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+      </div>
+      <p class="progress-text" id="progress-text">Pytanie 1 z 24</p>
+
+      <div class="card">
+        <span class="category-tag" id="category"></span>
+        <p class="question-text" id="question"></p>
+        <div class="options" id="options"></div>
+        <div class="feedback hidden" id="feedback"></div>
+        <button type="button" class="btn hidden" id="btn-next">Następne pytanie</button>
+      </div>
+    </section>
+
+    <section id="screen-result" class="screen start-screen">
+      <div class="card">
+        <p class="result-message" id="result-message"></p>
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-value" id="score-value">0</div>
+            <div class="stat-label">poprawnych</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value" id="total-value">24</div>
+            <div class="stat-label">pytań</div>
+          </div>
+        </div>
+        <button type="button" class="btn" id="btn-restart">Powtórz quiz</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
