@@ -53,6 +53,20 @@ header .subtitle {
   font-size: 0.95rem;
 }
 
+.quiz-nav {
+  margin: 0.75rem 0 0;
+  font-size: 0.9rem;
+}
+
+.quiz-nav a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.quiz-nav a:hover {
+  text-decoration: underline;
+}
+
 .progress-bar {
   height: 6px;
   background: var(--border);

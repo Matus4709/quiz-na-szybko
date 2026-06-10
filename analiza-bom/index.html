@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz — Systemy motywacji</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Quiz — Analiza BOM</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
   <div class="app">
     <header>
-      <h1>Systemy motywacji</h1>
+      <h1>Analiza BOM</h1>
       <p class="subtitle">Quiz do nauki — pytania i odpowiedzi w losowej kolejności</p>
-      <p class="quiz-nav"><a href="analiza-bom/index.html">Analiza BOM →</a></p>
+      <p class="quiz-nav"><a href="../index.html">← Systemy motywacji</a></p>
     </header>
 
     <section id="screen-start" class="screen active start-screen">
       <div class="card">
         <p>
-          Quiz zawiera <strong id="question-count">24</strong> pytań jednokrotnego wyboru
-          na podstawie materiału o systemach motywacji. Przy każdym uruchomieniu
+          Quiz zawiera <strong id="question-count">25</strong> pytań jednokrotnego wyboru
+          na podstawie materiału z analizy BOM. Przy każdym uruchomieniu
           pytania i kolejność odpowiedzi są losowane.
         </p>
         <button type="button" class="btn" id="btn-start">Rozpocznij quiz</button>
@@ -29,7 +29,7 @@
       <div class="progress-bar">
         <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
       </div>
-      <p class="progress-text" id="progress-text">Pytanie 1 z 24</p>
+      <p class="progress-text" id="progress-text">Pytanie 1 z 50</p>
 
       <div class="card">
         <span class="category-tag" id="category"></span>
@@ -49,7 +49,7 @@
             <div class="stat-label">poprawnych</div>
           </div>
           <div class="stat">
-            <div class="stat-value" id="total-value">24</div>
+            <div class="stat-value" id="total-value">50</div>
             <div class="stat-label">pytań</div>
           </div>
         </div>
@@ -59,6 +59,6 @@
   </div>
 
   <script src="questions.js"></script>
-  <script src="app.js"></script>
+  <script src="../app.js"></script>
 </body>
 </html>
