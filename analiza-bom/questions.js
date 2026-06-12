@@ -76,10 +76,9 @@ const QUESTIONS_RAW = [
     "question": "Modele predykcji bankructwa wykorzystują:",
     "options": {
       "A": "Pozytywną teorię bankructwa",
-      "B": "Normatywną teorię bankructwa",
-      "C": "Wszystkie odpowiedzi są poprawne"
+      "B": "Normatywną teorię bankructwa"
     },
-    "correct": "C"
+    "correct": "A"
   },
   {
     "id": 9,
