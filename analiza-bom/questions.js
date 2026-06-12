@@ -8,7 +8,7 @@ const QUESTIONS_RAW = [
       "A": "marża brutto",
       "B": "stopa marży brutto"
     },
-    "correct": "A"
+    "correct": "B"
   },
   {
     "id": 2,
@@ -58,7 +58,7 @@ const QUESTIONS_RAW = [
       "A": "kapitał obrotowy i kapitał trwały",
       "B": "Kapitał stały i kapitał zmienny"
     },
-    "correct": "A"
+    "correct": "B"
   },
   {
     "id": 7,
@@ -76,9 +76,10 @@ const QUESTIONS_RAW = [
     "question": "Modele predykcji bankructwa wykorzystują:",
     "options": {
       "A": "Pozytywną teorię bankructwa",
-      "B": "Normatywną teorię bankructwa"
+      "B": "Normatywną teorię bankructwa",
+      "C": "Wszystkie odpowiedzi są poprawne"
     },
-    "correct": "A"
+    "correct": "C"
   },
   {
     "id": 9,
@@ -90,7 +91,7 @@ const QUESTIONS_RAW = [
       "C": "przedmiotu",
       "D": "szczegółowości"
     },
-    "correct": "A"
+    "correct": "B"
   },
   {
     "id": 10,
@@ -100,7 +101,7 @@ const QUESTIONS_RAW = [
       "A": "metody jakościowe analizy",
       "B": "metody ilościowe analizy"
     },
-    "correct": "B"
+    "correct": "A"
   },
   {
     "id": 11,
@@ -120,7 +121,7 @@ const QUESTIONS_RAW = [
       "A": "metody porównań i badania przyczynowego",
       "B": "metody statyczne i dynamiczne"
     },
-    "correct": "B"
+    "correct": "A"
   },
   {
     "id": 13,
@@ -152,7 +153,7 @@ const QUESTIONS_RAW = [
       "C": "struktury kapitału",
       "D": "struktury majątku"
     },
-    "correct": "B"
+    "correct": "C"
   },
   {
     "id": 16,
@@ -174,7 +175,7 @@ const QUESTIONS_RAW = [
       "C": "metoda funkcyjna",
       "D": "metoda podstawień krzyżowych"
     },
-    "correct": "B"
+    "correct": "C"
   },
   {
     "id": 18,
@@ -236,7 +237,7 @@ const QUESTIONS_RAW = [
       "A": "porównania w czasie przy podstawie zmiennej",
       "B": "porównania w czasie przy podstawie stałej"
     },
-    "correct": "A"
+    "correct": "B"
   },
   {
     "id": 24,
