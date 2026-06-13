@@ -1,265 +1,265 @@
 /** Pytania wygenerowane z quiz_analiza_bom.csv */
 const QUESTIONS_RAW = [
-  // {
-  //   "id": 1,
-  //   "category": "Analiza BOM",
-  //   "question": "Wielkość informująca, jaka część przychodów pozostaje do dyspozycji podmiotu, po pokryciu kosztów zmiennych, na pokrycie kosztów stałych i pożądanego zysku, to:",
-  //   "options": {
-  //     "A": "marża brutto",
-  //     "B": "stopa marży brutto"
-  //   },
-  //   "correct": "B"
-  // },
-  // {
-  //   "id": 2,
-  //   "category": "Analiza BOM",
-  //   "question": "Niski poziom wskaźnika obrotowości należności informuje o tym, że podmiot zbyt długo kredytuje swoich odbiorców:",
-  //   "options": {
-  //     "A": "Tak",
-  //     "B": "Nie"
-  //   },
-  //   "correct": "A"
-  // },
-  // {
-  //   "id": 3,
-  //   "category": "Analiza BOM",
-  //   "question": "Analiza mająca za zadanie sprawdzać strukturę kapitału (pasywów) pod kątem zdolności przedsiębiorstwa do regulowania zobowiązań zwłaszcza długoterminowych, to:",
-  //   "options": {
-  //     "A": "analiza płynności",
-  //     "B": "analiza wypłacalności"
-  //   },
-  //   "correct": "B"
-  // },
-  // {
-  //   "id": 4,
-  //   "category": "Analiza BOM",
-  //   "question": "Zbyt wysoka wartość wskaźnika ogólnego zadłużenia świadczy o dużym ryzyku finansowym, informując jednocześnie, że przedsiębiorstwo może utracić zdolność do zwrotu długów:",
-  //   "options": {
-  //     "A": "Tak",
-  //     "B": "Nie"
-  //   },
-  //   "correct": "A"
-  // },
-  // {
-  //   "id": 5,
-  //   "category": "Analiza BOM",
-  //   "question": "Dominacja kosztów niezależnych od rozmiarów produkcji sprawia, iż tempo zmian kosztów całkowitych jest:",
-  //   "options": {
-  //     "A": "wyraźnie wolniejsze od tempa zmian wielkości sprzedaży",
-  //     "B": "wyraźnie szybsze od tempa zmian wielkości sprzedaży"
-  //   },
-  //   "correct": "A"
-  // },
-  // {
-  //   "id": 6,
-  //   "category": "Analiza BOM",
-  //   "question": "Ze względu na rolę jaką odgrywa kapitał produkcyjny w działalności wytwórczej, dzieli się go na:",
-  //   "options": {
-  //     "A": "kapitał obrotowy i kapitał trwały",
-  //     "B": "Kapitał stały i kapitał zmienny"
-  //   },
-  //   "correct": "B"
-  // },
-  // {
-  //   "id": 7,
-  //   "category": "Analiza BOM",
-  //   "question": "Przedsiębiorstwo wypracowuje ekonomiczną wartość dodaną, jeżeli rentowność kapitału jest:",
-  //   "options": {
-  //     "A": "mniejsza od średniego ważonego kosztu kapitału",
-  //     "B": "większa od średniego ważonego kosztu kapitału"
-  //   },
-  //   "correct": "B"
-  // },
-  // {
-  //   "id": 8,
-  //   "category": "Analiza BOM",
-  //   "question": "Modele predykcji bankructwa wykorzystują:",
-  //   "options": {
-  //     "A": "Pozytywną teorię bankructwa",
-  //     "B": "Normatywną teorię bankructwa"
-  //   },
-  //   "correct": "A"
-  // },
-  // {
-  //   "id": 9,
-  //   "category": "Analiza BOM",
-  //   "question": "Metodę funkcjonalną, kompleksową i decyzyjną wyróżnia się z punktu widzenia:",
-  //   "options": {
-  //     "A": "przeznaczenia",
-  //     "B": "metody badań",
-  //     "C": "przedmiotu",
-  //     "D": "szczegółowości"
-  //   },
-  //   "correct": "B"
-  // },
-  // {
-  //   "id": 10,
-  //   "category": "Analiza BOM",
-  //   "question": "Metody polegające głównie na opisie dynamiki szeregów czasowych, wyrażonych za pomocą wskaźników lub przedstawionych w formie graficznej, to:",
-  //   "options": {
-  //     "A": "metody jakościowe analizy",
-  //     "B": "metody ilościowe analizy"
-  //   },
-  //   "correct": "A"
-  // },
-  // {
-  //   "id": 11,
-  //   "category": "Analiza BOM",
-  //   "question": "Zasada, że kapitał nie powinien być dłużej czasowo związany ze składnikami majątku niż wynosi okres jego pozostawania w przedsiębiorstwie, to:",
-  //   "options": {
-  //     "A": "złota zasada finansowa",
-  //     "B": "złota zasada bilansowa"
-  //   },
-  //   "correct": "A"
-  // },
-  // {
-  //   "id": 12,
-  //   "category": "Analiza BOM",
-  //   "question": "Biorąc pod uwagę stopień pogłębienia badania zjawisk oraz formę opisu, wyróżnia się:",
-  //   "options": {
-  //     "A": "metody porównań i badania przyczynowego",
-  //     "B": "metody statyczne i dynamiczne"
-  //   },
-  //   "correct": "A"
-  // },
-  // {
-  //   "id": 13,
-  //   "category": "Analiza BOM",
-  //   "question": "Wskaźniki ukazujące efekty w postaci wyników finansowych w stosunku do wartości sprzedaży, zaangażowanego majątku czy kapitałów, to:",
-  //   "options": {
-  //     "A": "wskaźniki sprawności działania",
-  //     "B": "wskaźniki rentowności działania"
-  //   },
-  //   "correct": "B"
-  // },
-  // {
-  //   "id": 14,
-  //   "category": "Analiza BOM",
-  //   "question": "Jeżeli w mianowniku wskaźnika rentowności kapitałów własnych uwzględni się kapitał stały, wówczas rentowność tego kapitału jest równa rentowności majątku:",
-  //   "options": {
-  //     "A": "Tak",
-  //     "B": "Nie"
-  //   },
-  //   "correct": "B"
-  // },
-  // {
-  //   "id": 15,
-  //   "category": "Analiza BOM",
-  //   "question": "O poziomie należności finansowej informuje wskaźnik:",
-  //   "options": {
-  //     "A": "zastosowania kapitałów własnych",
-  //     "B": "zastosowania kapitałów obcych",
-  //     "C": "struktury kapitału",
-  //     "D": "struktury majątku"
-  //   },
-  //   "correct": "C"
-  // },
-  // {
-  //   "id": 16,
-  //   "category": "Analiza BOM",
-  //   "question": "Metody ujmujące wpływ czynników podstawowych, drugorzędnych i przypadkowych na badane zjawisko, to:",
-  //   "options": {
-  //     "A": "metody deterministyczne",
-  //     "B": "metody stochastyczne"
-  //   },
-  //   "correct": "B"
-  // },
-  // {
-  //   "id": 17,
-  //   "category": "Analiza BOM",
-  //   "question": "Metoda obejmująca etapy: ustalenie wskaźników zmienności i stopnia zmian poszczególnych czynników oraz ustalenie odchyleń cząstkowych, to:",
-  //   "options": {
-  //     "A": "metoda różnic cząstkowych",
-  //     "B": "metoda podstawień cząstkowych",
-  //     "C": "metoda funkcyjna",
-  //     "D": "metoda podstawień krzyżowych"
-  //   },
-  //   "correct": "C"
-  // },
-  // {
-  //   "id": 18,
-  //   "category": "Analiza BOM",
-  //   "question": "Wyniki uzyskiwane metodą funkcyjną oraz metodą podstawień krzyżowych są identyczne, podobnie wyniki uzyskane metodą różnic cząstkowych i metodą kolejnych podstawień są takie same:",
-  //   "options": {
-  //     "A": "Tak",
-  //     "B": "Nie"
-  //   },
-  //   "correct": "A"
-  // },
-  // {
-  //   "id": 19,
-  //   "category": "Analiza BOM",
-  //   "question": "Ilościowe, bezwzględne wielkości charakteryzujące rozmiary określonych zjawisk ekonomicznych, to:",
-  //   "options": {
-  //     "A": "mierniki ekonomiczne",
-  //     "B": "wskaźniki ekonomiczne"
-  //   },
-  //   "correct": "A"
-  // },
-  // {
-  //   "id": 20,
-  //   "category": "Analiza BOM",
-  //   "question": "Różnice w treści, budowie i sposobie liczenia różnych wielkości ekonomicznych, określane są jako przesłanka:",
-  //   "options": {
-  //     "A": "zmian metodologicznych",
-  //     "B": "zmian finansowych",
-  //     "C": "zmian organizacyjnych",
-  //     "D": "zmian rzeczowych"
-  //   },
-  //   "correct": "A"
-  // },
-  // {
-  //   "id": 21,
-  //   "category": "Analiza BOM",
-  //   "question": "Wraz z oddalaniem się rzeczywiście osiągniętej sprzedaży od progu rentowności rośnie margines bezpieczeństwa oraz:",
-  //   "options": {
-  //     "A": "rośnie stopień dźwigni operacyjnej",
-  //     "B": "maleje stopień dźwigni operacyjnej"
-  //   },
-  //   "correct": "B"
-  // },
-  // {
-  //   "id": 22,
-  //   "category": "Analiza BOM",
-  //   "question": "Jeżeli krzywa kosztów rośnie szybciej niż krzywa sprzedaży, to pochodna kosztu jest:",
-  //   "options": {
-  //     "A": "większa niż pochodna sprzedaży po rozmiarze produkcji",
-  //     "B": "mniejsza niż pochodna sprzedaży po rozmiarze produkcji"
-  //   },
-  //   "correct": "A"
-  // },
-  // {
-  //   "id": 23,
-  //   "category": "Analiza BOM",
-  //   "question": "Porównania, pozwalające na ustalenie wskaźników dynamiki i określenie tendencji rozwojowej badanego zjawiska, to:",
-  //   "options": {
-  //     "A": "porównania w czasie przy podstawie zmiennej",
-  //     "B": "porównania w czasie przy podstawie stałej"
-  //   },
-  //   "correct": "B"
-  // },
-  // {
-  //   "id": 24,
-  //   "category": "Analiza BOM",
-  //   "question": "Ustalając rentowność całego kapitału zainwestowanego w przedsiębiorstwo, zysk netto należy powiększyć o odsetki zapłacone od kapitałów obcych pomniejszone o przypadający na nie podatek dochodowy:",
-  //   "options": {
-  //     "A": "Tak",
-  //     "B": "Nie"
-  //   },
-  //   "correct": "A"
-  // },
-  // {
-  //   "id": 25,
-  //   "category": "Analiza BOM",
-  //   "question": "Do oceny zjawiska dźwigni finansowej, które ma miejsce gdy rentowność operacyjna aktywów jest większa od stopy procentowej kredytów i pożyczek, służy wskaźnik:",
-  //   "options": {
-  //     "A": "rentowności kapitału własnego",
-  //     "B": "rentowności aktywów",
-  //     "C": "rentowności operacyjnej",
-  //     "D": "rentowności kapitału całkowitego"
-  //   },
-  //   "correct": "A"
-  // },
+  {
+    "id": 1,
+    "category": "Analiza BOM",
+    "question": "Wielkość informująca, jaka część przychodów pozostaje do dyspozycji podmiotu, po pokryciu kosztów zmiennych, na pokrycie kosztów stałych i pożądanego zysku, to:",
+    "options": {
+      "A": "marża brutto",
+      "B": "stopa marży brutto"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 2,
+    "category": "Analiza BOM",
+    "question": "Niski poziom wskaźnika obrotowości należności informuje o tym, że podmiot zbyt długo kredytuje swoich odbiorców:",
+    "options": {
+      "A": "Tak",
+      "B": "Nie"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 3,
+    "category": "Analiza BOM",
+    "question": "Analiza mająca za zadanie sprawdzać strukturę kapitału (pasywów) pod kątem zdolności przedsiębiorstwa do regulowania zobowiązań zwłaszcza długoterminowych, to:",
+    "options": {
+      "A": "analiza płynności",
+      "B": "analiza wypłacalności"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 4,
+    "category": "Analiza BOM",
+    "question": "Zbyt wysoka wartość wskaźnika ogólnego zadłużenia świadczy o dużym ryzyku finansowym, informując jednocześnie, że przedsiębiorstwo może utracić zdolność do zwrotu długów:",
+    "options": {
+      "A": "Tak",
+      "B": "Nie"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 5,
+    "category": "Analiza BOM",
+    "question": "Dominacja kosztów niezależnych od rozmiarów produkcji sprawia, iż tempo zmian kosztów całkowitych jest:",
+    "options": {
+      "A": "wyraźnie wolniejsze od tempa zmian wielkości sprzedaży",
+      "B": "wyraźnie szybsze od tempa zmian wielkości sprzedaży"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 6,
+    "category": "Analiza BOM",
+    "question": "Ze względu na rolę jaką odgrywa kapitał produkcyjny w działalności wytwórczej, dzieli się go na:",
+    "options": {
+      "A": "kapitał obrotowy i kapitał trwały",
+      "B": "Kapitał stały i kapitał zmienny"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 7,
+    "category": "Analiza BOM",
+    "question": "Przedsiębiorstwo wypracowuje ekonomiczną wartość dodaną, jeżeli rentowność kapitału jest:",
+    "options": {
+      "A": "mniejsza od średniego ważonego kosztu kapitału",
+      "B": "większa od średniego ważonego kosztu kapitału"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 8,
+    "category": "Analiza BOM",
+    "question": "Modele predykcji bankructwa wykorzystują:",
+    "options": {
+      "A": "Pozytywną teorię bankructwa",
+      "B": "Normatywną teorię bankructwa"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 9,
+    "category": "Analiza BOM",
+    "question": "Metodę funkcjonalną, kompleksową i decyzyjną wyróżnia się z punktu widzenia:",
+    "options": {
+      "A": "przeznaczenia",
+      "B": "metody badań",
+      "C": "przedmiotu",
+      "D": "szczegółowości"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 10,
+    "category": "Analiza BOM",
+    "question": "Metody polegające głównie na opisie dynamiki szeregów czasowych, wyrażonych za pomocą wskaźników lub przedstawionych w formie graficznej, to:",
+    "options": {
+      "A": "metody jakościowe analizy",
+      "B": "metody ilościowe analizy"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 11,
+    "category": "Analiza BOM",
+    "question": "Zasada, że kapitał nie powinien być dłużej czasowo związany ze składnikami majątku niż wynosi okres jego pozostawania w przedsiębiorstwie, to:",
+    "options": {
+      "A": "złota zasada finansowa",
+      "B": "złota zasada bilansowa"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 12,
+    "category": "Analiza BOM",
+    "question": "Biorąc pod uwagę stopień pogłębienia badania zjawisk oraz formę opisu, wyróżnia się:",
+    "options": {
+      "A": "metody porównań i badania przyczynowego",
+      "B": "metody statyczne i dynamiczne"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 13,
+    "category": "Analiza BOM",
+    "question": "Wskaźniki ukazujące efekty w postaci wyników finansowych w stosunku do wartości sprzedaży, zaangażowanego majątku czy kapitałów, to:",
+    "options": {
+      "A": "wskaźniki sprawności działania",
+      "B": "wskaźniki rentowności działania"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 14,
+    "category": "Analiza BOM",
+    "question": "Jeżeli w mianowniku wskaźnika rentowności kapitałów własnych uwzględni się kapitał stały, wówczas rentowność tego kapitału jest równa rentowności majątku:",
+    "options": {
+      "A": "Tak",
+      "B": "Nie"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 15,
+    "category": "Analiza BOM",
+    "question": "O poziomie należności finansowej informuje wskaźnik:",
+    "options": {
+      "A": "zastosowania kapitałów własnych",
+      "B": "zastosowania kapitałów obcych",
+      "C": "struktury kapitału",
+      "D": "struktury majątku"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 16,
+    "category": "Analiza BOM",
+    "question": "Metody ujmujące wpływ czynników podstawowych, drugorzędnych i przypadkowych na badane zjawisko, to:",
+    "options": {
+      "A": "metody deterministyczne",
+      "B": "metody stochastyczne"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 17,
+    "category": "Analiza BOM",
+    "question": "Metoda obejmująca etapy: ustalenie wskaźników zmienności i stopnia zmian poszczególnych czynników oraz ustalenie odchyleń cząstkowych, to:",
+    "options": {
+      "A": "metoda różnic cząstkowych",
+      "B": "metoda podstawień cząstkowych",
+      "C": "metoda funkcyjna",
+      "D": "metoda podstawień krzyżowych"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 18,
+    "category": "Analiza BOM",
+    "question": "Wyniki uzyskiwane metodą funkcyjną oraz metodą podstawień krzyżowych są identyczne, podobnie wyniki uzyskane metodą różnic cząstkowych i metodą kolejnych podstawień są takie same:",
+    "options": {
+      "A": "Tak",
+      "B": "Nie"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 19,
+    "category": "Analiza BOM",
+    "question": "Ilościowe, bezwzględne wielkości charakteryzujące rozmiary określonych zjawisk ekonomicznych, to:",
+    "options": {
+      "A": "mierniki ekonomiczne",
+      "B": "wskaźniki ekonomiczne"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 20,
+    "category": "Analiza BOM",
+    "question": "Różnice w treści, budowie i sposobie liczenia różnych wielkości ekonomicznych, określane są jako przesłanka:",
+    "options": {
+      "A": "zmian metodologicznych",
+      "B": "zmian finansowych",
+      "C": "zmian organizacyjnych",
+      "D": "zmian rzeczowych"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 21,
+    "category": "Analiza BOM",
+    "question": "Wraz z oddalaniem się rzeczywiście osiągniętej sprzedaży od progu rentowności rośnie margines bezpieczeństwa oraz:",
+    "options": {
+      "A": "rośnie stopień dźwigni operacyjnej",
+      "B": "maleje stopień dźwigni operacyjnej"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 22,
+    "category": "Analiza BOM",
+    "question": "Jeżeli krzywa kosztów rośnie szybciej niż krzywa sprzedaży, to pochodna kosztu jest:",
+    "options": {
+      "A": "większa niż pochodna sprzedaży po rozmiarze produkcji",
+      "B": "mniejsza niż pochodna sprzedaży po rozmiarze produkcji"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 23,
+    "category": "Analiza BOM",
+    "question": "Porównania, pozwalające na ustalenie wskaźników dynamiki i określenie tendencji rozwojowej badanego zjawiska, to:",
+    "options": {
+      "A": "porównania w czasie przy podstawie zmiennej",
+      "B": "porównania w czasie przy podstawie stałej"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 24,
+    "category": "Analiza BOM",
+    "question": "Ustalając rentowność całego kapitału zainwestowanego w przedsiębiorstwo, zysk netto należy powiększyć o odsetki zapłacone od kapitałów obcych pomniejszone o przypadający na nie podatek dochodowy:",
+    "options": {
+      "A": "Tak",
+      "B": "Nie"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 25,
+    "category": "Analiza BOM",
+    "question": "Do oceny zjawiska dźwigni finansowej, które ma miejsce gdy rentowność operacyjna aktywów jest większa od stopy procentowej kredytów i pożyczek, służy wskaźnik:",
+    "options": {
+      "A": "rentowności kapitału własnego",
+      "B": "rentowności aktywów",
+      "C": "rentowności operacyjnej",
+      "D": "rentowności kapitału całkowitego"
+    },
+    "correct": "A"
+  },
   {
     "id": 26,
     "category": "Analiza BOM",
